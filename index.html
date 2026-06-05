@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wasla – Smart Delivery & Ride App in Algeria</title>
+  <meta name="description" content="Wasla is Algeria's premier delivery and ride booking app. Send parcels, documents, groceries and more — fast, safe, and affordable. Download the APK now." />
+  <meta name="keywords" content="Wasla, Algeria delivery app, ride booking Algeria, APK download, wasla app, livraison algerie" />
+  <meta property="og:title" content="Wasla – Smart Delivery App Algeria" />
+  <meta property="og:description" content="Book rides and send deliveries anywhere in Algeria with Wasla. Download the Android app now." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Wasla</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" data-t="nav_features">Features</a>
+        <a href="#how-it-works" data-t="nav_how_it_works">How It Works</a>
+        <a href="#download" data-t="nav_download">Download</a>
+        <a href="#faq" data-t="nav_faq">FAQ</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="lang-selector">
+          <button class="lang-btn" id="langBtn">
+            <span>🌐</span> <span id="currentLang">English</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <div class="lang-option active" data-lang="en">🇺🇸 English</div>
+            <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+            <div class="lang-option" data-lang="ar">🇩🇿 العربية</div>
+          </div>
+        </div>
+        <a href="#download" class="nav-cta" id="nav-download-btn" data-t="nav_download_btn">Download APK</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-glow-blob"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" data-t="hero_badge">🇩🇿 Made for Algeria</div>
+        <h1 class="hero-title" data-t="hero_title">
+          Deliveries &amp; Rides,<br />
+          <span class="hero-title-accent">Smarter &amp; Faster</span>
+        </h1>
+        <p class="hero-subtitle" data-t="hero_subtitle">
+          Wasla connects customers with vetted drivers across Algeria. 
+          Send parcels, documents, groceries, or book a ride — all in one app, paid in DZD.
+        </p>
+        <div class="hero-actions">
+          <a href="app-release.apk" class="btn-download large" id="hero-apk-btn" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 8l-3-3m3 3l3-3M3 20h18"/></svg>
+            <span data-t="hero_btn_download">Download for Android</span>
+          </a>
+          <a href="#how-it-works" class="btn-ghost" data-t="hero_btn_ghost">See How It Works ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-t="stat_coverage_num">Algeria</span>
+            <span class="stat-label" data-t="stat_coverage_label">Only Coverage</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-t="stat_currency_num">DZD</span>
+            <span class="stat-label" data-t="stat_currency_label">Local Currency</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-t="stat_availability_num">24 / 7</span>
+            <span class="stat-label" data-t="stat_availability_label">Availability</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-phone">
+        <div class="phone-glow"></div>
+        <div class="phone-img-wrap">
+          <img src="phone_mockup.png" alt="Wasla App on Android" class="phone-img" />
+        </div>
+        <div class="phone-badge badge-1" data-t="phone_badge_parcel">📦 Parcel sent!</div>
+        <div class="phone-badge badge-2" data-t="phone_badge_driver">🚗 Driver nearby</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─── -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-label" data-t="features_label">Features</div>
+      <h2 class="section-title" data-t="features_title">Everything you need, nothing you don't</h2>
+      <p class="section-subtitle" data-t="features_subtitle">Built for the Algerian market — local language support, DZD pricing, and Algeria-only location search.</p>
+
+      <div class="features-grid">
+        <div class="feature-card" data-color="teal">
+          <div class="feature-icon">📍</div>
+          <h3 data-t="feat_1_title">Smart Location Search</h3>
+          <p data-t="feat_1_desc">Algeria-only smart address search powered by Google Maps, biased to your current location for instantly relevant results.</p>
+        </div>
+        <div class="feature-card" data-color="blue">
+          <div class="feature-icon">📦</div>
+          <h3 data-t="feat_2_title">Multiple Delivery Types</h3>
+          <p data-t="feat_2_desc">Send parcels, documents, groceries, or food. Each category handled with care by vetted, approved drivers.</p>
+        </div>
+        <div class="feature-card" data-color="green">
+          <div class="feature-icon">✅</div>
+          <h3 data-t="feat_3_title">Vetted Drivers Only</h3>
+          <p data-t="feat_3_desc">Every driver goes through an authorizer verification process before accepting any delivery or ride request.</p>
+        </div>
+        <div class="feature-card" data-color="orange">
+          <div class="feature-icon">💵</div>
+          <h3 data-t="feat_4_title">DZD Transparent Pricing</h3>
+          <p data-t="feat_4_desc">All prices shown in Algerian Dinar. No hidden fees, no currency surprises — what you see is what you pay.</p>
+        </div>
+        <div class="feature-card" data-color="purple">
+          <div class="feature-icon">🗺️</div>
+          <h3 data-t="feat_5_title">Real-Time Tracking</h3>
+          <p data-t="feat_5_desc">Track your driver live on a map from pickup to dropoff. Know exactly where your delivery is at all times.</p>
+        </div>
+        <div class="feature-card" data-color="rose">
+          <div class="feature-icon">🕓</div>
+          <h3 data-t="feat_6_title">Today's Orders Dashboard</h3>
+          <p data-t="feat_6_desc">Customers see all of today's commands on the homepage for quick access to their current and recent deliveries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-inner">
+      <div class="section-label" data-t="how_it_works_label">How It Works</div>
+      <h2 class="section-title" data-t="how_it_works_title">Simple steps, fast deliveries</h2>
+
+      <div class="steps-wrapper">
+        <div class="steps-column">
+          <h3 class="steps-role-title">
+            <span class="role-badge customer" data-t="role_customer">Customer</span>
+          </h3>
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <h4 data-t="cust_step_1_title">Open the App</h4>
+              <p data-t="cust_step_1_desc">Sign in and land on your personalized home screen with today's orders and delivery shortcuts.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <h4 data-t="cust_step_2_title">Choose a Delivery Type</h4>
+              <p data-t="cust_step_2_desc">Pick from Parcels, Documents, Groceries or Food. Then set your pickup and dropoff locations on the map.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <h4 data-t="cust_step_3_title">Track &amp; Receive</h4>
+              <p data-t="cust_step_3_desc">Watch your driver in real-time and get your delivery confirmed with a photo and status update.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps-divider">
+          <div class="steps-divider-line"></div>
+          <div class="steps-divider-icon">⇄</div>
+          <div class="steps-divider-line"></div>
+        </div>
+
+        <div class="steps-column">
+          <h3 class="steps-role-title">
+            <span class="role-badge driver" data-t="role_driver">Driver</span>
+          </h3>
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-body">
+              <h4 data-t="driver_step_1_title">Apply &amp; Get Vetted</h4>
+              <p data-t="driver_step_1_desc">Register as a driver and get authorized by the Wasla team to begin accepting delivery and ride requests.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-body">
+              <h4 data-t="driver_step_2_title">Go Online</h4>
+              <p data-t="driver_step_2_desc">Toggle your availability status to start receiving delivery and ride requests near your location.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-body">
+              <h4 data-t="driver_step_3_title">Deliver &amp; Earn</h4>
+              <p data-t="driver_step_3_desc">Accept requests, complete deliveries, and track your earnings history in the driver dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOWNLOAD ─── -->
+  <section class="download" id="download">
+    <div class="download-glow"></div>
+    <div class="section-inner download-inner">
+      <div class="download-text">
+        <div class="section-label light" data-t="download_label">Download</div>
+        <h2 class="section-title light" data-t="download_title">Get Wasla on your phone</h2>
+        <p class="section-subtitle light" data-t="download_subtitle">Download the Android APK directly — no Play Store needed. Works on Android 6.0 and above.</p>
+        <a href="app-release.apk" class="btn-download large" id="hero-apk-btn" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 8l-3-3m3 3l3-3M3 20h18"/></svg>
+          <span data-t="download_btn_text">Download APK &nbsp;·&nbsp; Free</span>
+        </a>
+        <p class="download-note" data-t="download_warning">⚠️ You'll need to allow installation from unknown sources (see guide below).</p>
+      </div>
+
+      <!-- ─── INSTALL GUIDE ─── -->
+      <div class="install-guide" id="install-guide">
+        <h3 class="install-title" data-t="install_guide_title">📱 How to Install</h3>
+        <div class="install-step">
+          <div class="install-step-num">1</div>
+          <div class="install-step-text" data-t="install_step_1">
+            <strong>Download the APK</strong> using the button above. Your browser may warn you — tap <em>Download anyway</em>.
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="install-step-num">2</div>
+          <div class="install-step-text" data-t="install_step_2">
+            Open your phone's <strong>Settings → Security</strong> (or <strong>Privacy</strong> on newer Android) and enable <em>"Install unknown apps"</em> for your browser.
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="install-step-num">3</div>
+          <div class="install-step-text" data-t="install_step_3">
+            Open the downloaded file from your <strong>Downloads folder</strong> and tap <em>Install</em>.
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="install-step-num">4</div>
+          <div class="install-step-text" data-t="install_step_4">
+            Once installed, open <strong>Wasla</strong>, sign up or log in, and start booking! 🎉
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="faq" id="faq">
+    <div class="section-inner">
+      <div class="section-label" data-t="faq_label">FAQ</div>
+      <h2 class="section-title" data-t="faq_title">Common questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question" data-t="faq_q1">Is the APK safe to install?</summary>
+          <div class="faq-answer" data-t="faq_a1">Yes. The Wasla APK is the official release built directly from the app's source code. Installing from APK is a standard and secure method on Android devices.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question" data-t="faq_q2">Does Wasla work outside Algeria?</summary>
+          <div class="faq-answer" data-t="faq_a2">Wasla is exclusively designed for use within Algeria. All location searches, driver operations, and pricing are calibrated for the Algerian market.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question" data-t="faq_q3">How do I update the app?</summary>
+          <div class="faq-answer" data-t="faq_a3">Simply return to this website and download the latest APK when a new version is available. Install it over the existing app — your account data will be preserved.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question" data-t="faq_q4">What Android version is required?</summary>
+          <div class="faq-answer" data-t="faq_a4">Wasla requires Android 6.0 (Marshmallow) or newer. Most smartphones from 2016 and later are fully compatible.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question" data-t="faq_q5">How do I become a driver?</summary>
+          <div class="faq-answer" data-t="faq_a5">Download the app, select "Register as Driver" during sign-up, and complete your profile. Our authorizer team reviews applications and verifies drivers before they can go online.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-text">Wasla</span>
+      </div>
+      <p class="footer-tagline" data-t="footer_tagline">Connecting Algeria, one delivery at a time.</p>
+      <p class="footer-copy" data-t="footer_copy">© 2026 Wasla. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- ─── JAVASCRIPT ENGINE ─── -->
+  <script>
+    // 1. Navbar Scroll Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // 2. Intersection Observer scroll-in animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.feature-card, .step-item, .install-step, .faq-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // 3. Language & Translation Engine
+    const translations = {
+      en: {
+        nav_features: "Features",
+        nav_how_it_works: "How It Works",
+        nav_download: "Download",
+        nav_faq: "FAQ",
+        nav_download_btn: "Download APK",
+        hero_badge: "🇩🇿 Made for Algeria",
+        hero_title: 'Deliveries &amp; Rides,<br>Smarter &amp; Faster',
+        hero_subtitle: "Wasla connects customers with vetted drivers across Algeria. Send parcels, documents, groceries, or book a ride — all in one app, paid in DZD.",
+        hero_btn_download: "Download for Android",
+        hero_btn_ghost: "See How It Works ↓",
+        stat_coverage_num: "Algeria",
+        stat_coverage_label: "Only Coverage",
+        stat_currency_num: "DZD",
+        stat_currency_label: "Local Currency",
+        stat_availability_num: "24 / 7",
+        stat_availability_label: "Availability",
+        phone_badge_parcel: "📦 Parcel sent!",
+        phone_badge_driver: "🚗 Driver nearby",
+        
+        features_label: "Features",
+        features_title: "Everything you need, nothing you don't",
+        features_subtitle: "Built for the Algerian market — local language support, DZD pricing, and Algeria-only location search.",
+        feat_1_title: "Smart Location Search",
+        feat_1_desc: "Algeria-only smart address search powered by Google Maps, biased to your current location for instantly relevant results.",
+        feat_2_title: "Multiple Delivery Types",
+        feat_2_desc: "Send parcels, documents, groceries, or food. Each category handled with care by vetted, approved drivers.",
+        feat_3_title: "Vetted Drivers Only",
+        feat_3_desc: "Every driver goes through an authorizer verification process before accepting any delivery or ride request.",
+        feat_4_title: "DZD Transparent Pricing",
+        feat_4_desc: "All prices shown in Algerian Dinar. No hidden fees, no currency surprises — what you see is what you pay.",
+        feat_5_title: "Real-Time Tracking",
+        feat_5_desc: "Track your driver live on a map from pickup to dropoff. Know exactly where your delivery is at all times.",
+        feat_6_title: "Today's Orders Dashboard",
+        feat_6_desc: "Customers see all of today's commands on the homepage for quick access to their current and recent deliveries.",
+        
+        estimator_label: "Price Calculator",
+        estimator_title: "Estimate your delivery or ride fare in real-time",
+        estimator_subtitle: "Select your delivery category and set the distance in kilometers. Get transparent, localized pricing instantly in Algerian Dinars (DZD).",
+        estimator_book_cta: "Book Delivery Now",
+        estimator_driver_cta: "Become Wasla Driver",
+        service_ride: "Ride",
+        service_parcel: "Parcel",
+        service_grocery: "Groceries",
+        service_food: "Food",
+        distance_label: "Distance",
+        estimated_fare_label: "Estimated Fare",
+        estimator_details_init: "Base fare included · Vetted driver match",
+        estimator_details_ride: "Estimated ride fare · 150 DZD base fare + 40 DZD/km",
+        estimator_details_parcel: "Express parcel delivery · 180 DZD base fare + 30 DZD/km",
+        estimator_details_grocery: "Grocery delivery fee · 200 DZD base fare + 35 DZD/km",
+        estimator_details_food: "Hot food delivery fee · 150 DZD base fare + 35 DZD/km",
+        
+        how_it_works_label: "How It Works",
+        how_it_works_title: "Simple steps, fast deliveries",
+        role_customer: "Customer",
+        role_driver: "Driver",
+        cust_step_1_title: "Open the App",
+        cust_step_1_desc: "Sign in and land on your personalized home screen with today's orders and delivery shortcuts.",
+        cust_step_2_title: "Choose a Delivery Type",
+        cust_step_2_desc: "Pick from Parcels, Documents, Groceries or Food. Then set your pickup and dropoff locations on the map.",
+        cust_step_3_title: "Track &amp; Receive",
+        cust_step_3_desc: "Watch your driver in real-time and get your delivery confirmed with a photo and status update.",
+        driver_step_1_title: "Apply &amp; Get Vetted",
+        driver_step_1_desc: "Register as a driver and get authorized by the Wasla team to begin accepting delivery and ride requests.",
+        driver_step_2_title: "Go Online",
+        driver_step_2_desc: "Toggle your availability status to start receiving delivery and ride requests near your location.",
+        driver_step_3_title: "Deliver &amp; Earn",
+        driver_step_3_desc: "Accept requests, complete deliveries, and track your earnings history in the driver dashboard.",
+        
+        download_label: "Download",
+        download_title: "Get Wasla on your phone",
+        download_subtitle: "Download the Android APK directly — no Play Store needed. Works on Android 6.0 and above.",
+        download_btn_text: "Download APK &nbsp;·&nbsp; Free",
+        download_warning: "⚠️ You'll need to allow installation from unknown sources (see guide below).",
+        
+        install_guide_title: "📱 How to Install",
+        install_step_1: "<strong>Download the APK</strong> using the button above. Your browser may warn you — tap <em>Download anyway</em>.",
+        install_step_2: "Open your phone's <strong>Settings → Security</strong> (or <strong>Privacy</strong> on newer Android) and enable <em>\"Install unknown apps\"</em> for your browser.",
+        install_step_3: "Open the downloaded file from your <strong>Downloads folder</strong> and tap <em>Install</em>.",
+        install_step_4: "Once installed, open <strong>Wasla</strong>, sign up or log in, and start booking! 🎉",
+        
+        faq_label: "FAQ",
+        faq_title: "Common questions",
+        faq_q1: "Is the APK safe to install?",
+        faq_a1: "Yes. The Wasla APK is the official release built directly from the app's source code. Installing from APK is a standard and secure method on Android devices.",
+        faq_q2: "Does Wasla work outside Algeria?",
+        faq_a2: "Wasla is exclusively designed for use within Algeria. All location searches, driver operations, and pricing are calibrated for the Algerian market.",
+        faq_q3: "How do I update the app?",
+        faq_a3: "Simply return to this website and download the latest APK when a new version is available. Install it over the existing app — your account data will be preserved.",
+        faq_q4: "What Android version is required?",
+        faq_a4: "Wasla requires Android 6.0 (Marshmallow) or newer. Most smartphones from 2016 and later are fully compatible.",
+        faq_q5: "How do I become a driver?",
+        faq_a5: "Download the app, select \"Register as Driver\" during sign-up, and complete your profile. Our authorizer team reviews applications and verifies drivers before they can go online.",
+        
+        footer_tagline: "Connecting Algeria, one delivery at a time.",
+        footer_copy: "© 2026 Wasla. All rights reserved.",
+        
+        modal_book_title: "Book a Wasla Delivery",
+        modal_book_desc: "Send packages, get groceries, or book a fast ride in minutes.",
+        form_name: "Your Name",
+        form_phone: "Phone Number",
+        form_city: "City",
+        form_service: "Service Type",
+        form_submit_book: "Request Estimation",
+        success_book_title: "Request Placed!",
+        success_book_desc: "Thank you! We've registered your pre-order request. Since Wasla is still under development, our team will review availability and notify you by SMS shortly.",
+        
+        modal_driver_title: "Apply as a Wasla Driver",
+        modal_driver_desc: "Earn extra income by delivering parcels or giving rides in your city.",
+        form_vehicle: "Vehicle Type",
+        form_submit_driver: "Submit Driver Application",
+        success_driver_title: "Application Received!",
+        success_driver_desc: "Excellent! Your driver application has been successfully submitted. Our verification team will contact you within 48 hours to complete the vetting process.",
+        vehicle_car: "Car (Rides &amp; Deliveries)",
+        vehicle_moto: "Motorcycle (Fast Deliveries)",
+        vehicle_van: "Van / Small Truck (Heavy Cargo)"
+      },
+      fr: {
+        nav_features: "Fonctionnalités",
+        nav_how_it_works: "Comment ça marche",
+        nav_download: "Télécharger",
+        nav_faq: "FAQ",
+        nav_download_btn: "Télécharger APK",
+        hero_badge: "🇩🇿 Conçu pour l'Algérie",
+        hero_title: 'Livraisons &amp; Courses,<br>Plus Simples &amp; Plus Rapides',
+        hero_subtitle: "Wasla connecte les clients avec des chauffeurs certifiés en Algérie. Envoyez des colis, documents, courses, ou réservez un trajet — le tout dans une seule application payée en DZD.",
+        hero_btn_download: "Télécharger pour Android",
+        hero_btn_ghost: "Voir comment ça marche ↓",
+        stat_coverage_num: "Algérie",
+        stat_coverage_label: "Couverture Exclusive",
+        stat_currency_num: "DZD",
+        stat_currency_label: "Devise Locale",
+        stat_availability_num: "24/7",
+        stat_availability_label: "Disponibilité",
+        phone_badge_parcel: "📦 Colis envoyé !",
+        phone_badge_driver: "🚗 Chauffeur à proximité",
+        
+        features_label: "Fonctionnalités",
+        features_title: "Tout ce dont vous avez besoin, rien de superflu",
+        features_subtitle: "Développé pour le marché algérien — support linguistique, tarifs en DZD et recherche d'adresses en Algérie uniquement.",
+        feat_1_title: "Recherche de Position Intelligente",
+        feat_1_desc: "Recherche intelligente d'adresses restreinte à l'Algérie, optimisée par Google Maps et géolocalisée pour des résultats immédiats.",
+        feat_2_title: "Multiples Catégories de Livraison",
+        feat_2_desc: "Envoyez des colis, des documents, des courses ou des repas. Chaque livraison est traitée avec le plus grand soin par des chauffeurs certifiés.",
+        feat_3_title: "Chauffeurs Certifiés Uniquement",
+        feat_3_desc: "Chaque chauffeur passe par un processus de vérification rigoureux par notre équipe avant de pouvoir accepter des trajets ou livraisons.",
+        feat_4_title: "Tarification Transparente en DZD",
+        feat_4_desc: "Tous les prix sont affichés en Dinars Algériens. Pas de frais cachés ni de mauvaises surprises — vous payez ce qui est affiché.",
+        feat_5_title: "Suivi en Temps Réel",
+        feat_5_desc: "Suivez votre chauffeur en direct sur la carte, du point de retrait à la destination. Sachez exactement où se trouve votre colis à tout moment.",
+        feat_6_title: "Tableau de Bord des Commandes",
+        feat_6_desc: "Visualisez toutes vos commandes du jour directement sur l'écran d'accueil pour un accès rapide à vos livraisons récentes.",
+        
+        estimator_label: "Calculateur de Prix",
+        estimator_title: "Estimez votre trajet ou livraison en temps réel",
+        estimator_subtitle: "Sélectionnez votre type de service et définissez la distance en kilomètres pour obtenir instantanément une estimation claire en Dinars Algériens (DZD).",
+        estimator_book_cta: "Réserver une Livraison",
+        estimator_driver_cta: "Devenir Chauffeur Wasla",
+        service_ride: "Trajet",
+        service_parcel: "Colis",
+        service_grocery: "Courses",
+        service_food: "Repas",
+        distance_label: "Distance",
+        estimated_fare_label: "Tarif Estimé",
+        estimator_details_init: "Tarif de base inclus · Chauffeurs certifiés",
+        estimator_details_ride: "Estimation trajet · Tarif de base 150 DZD + 40 DZD/km",
+        estimator_details_parcel: "Livraison express · Tarif de base 180 DZD + 30 DZD/km",
+        estimator_details_grocery: "Frais de livraison courses · Tarif de base 200 DZD + 35 DZD/km",
+        estimator_details_food: "Frais de livraison repas · Tarif de base 150 DZD + 35 DZD/km",
+        
+        how_it_works_label: "Comment ça marche",
+        how_it_works_title: "Des étapes simples pour des livraisons rapides",
+        role_customer: "Client",
+        role_driver: "Chauffeur",
+        cust_step_1_title: "Ouvrez l'Application",
+        cust_step_1_desc: "Connectez-vous et accédez directement à votre écran d'accueil personnalisé avec vos raccourcis et commandes du jour.",
+        cust_step_2_title: "Sélectionnez le Type de Service",
+        cust_step_2_desc: "Choisissez entre Colis, Documents, Courses ou Repas. Définissez ensuite les adresses de retrait et de livraison sur la carte.",
+        cust_step_3_title: "Suivez &amp; Réceptionnez",
+        cust_step_3_desc: "Suivez votre chauffeur en temps réel et recevez votre livraison validée avec une preuve en photo.",
+        driver_step_1_title: "Postulez &amp; Soyez Validé",
+        driver_step_1_desc: "Inscrivez-vous en tant que chauffeur et faites vérifier votre profil par l'équipe Wasla pour commencer à recevoir des courses.",
+        driver_step_2_title: "Passez en Ligne",
+        driver_step_2_desc: "Activez votre statut de disponibilité pour recevoir instantanément des propositions de livraison proches de vous.",
+        driver_step_3_title: "Livre &amp; Gagnez",
+        driver_step_3_desc: "Acceptez les courses, effectuez les livraisons en toute simplicité et suivez l'historique de vos revenus depuis votre tableau de bord.",
+        
+        download_label: "Télécharger",
+        download_title: "Installez Wasla sur votre téléphone",
+        download_subtitle: "Téléchargez l'APK Android directement — pas besoin du Play Store. Compatible à partir d'Android 6.0.",
+        download_btn_text: "Télécharger l'APK &nbsp;·&nbsp; Gratuit",
+        download_warning: "⚠️ Vous devez autoriser l'installation d'applications de sources inconnues (voir guide ci-dessous).",
+        
+        install_guide_title: "📱 Guide d'Installation",
+        install_step_1: "<strong>Téléchargez l'APK</strong> avec le bouton ci-dessus. Si votre navigateur affiche une alerte — appuyez sur <em>Télécharger quand même</em>.",
+        install_step_2: "Allez dans les <strong>Paramètres → Sécurité</strong> (ou <strong>Confidentialité</strong>) de votre téléphone et activez <em>\"Installer des applications inconnues\"</em> pour votre navigateur.",
+        install_step_3: "Ouvrez le fichier téléchargé depuis votre <strong>dossier Téléchargements</strong> et appuyez sur <em>Installer</em>.",
+        install_step_4: "Une fois installé, ouvrez <strong>Wasla</strong>, inscrivez-vous ou connectez-vous, et commencez à commander ! 🎉",
+        
+        faq_label: "FAQ",
+        faq_title: "Questions fréquentes",
+        faq_q1: "L'APK est-il sûr à installer ?",
+        faq_a1: "Oui. L'APK Wasla est la version officielle compilée directement à partir du code source de l'application. C'est une méthode d'installation standard et sécurisée sur Android.",
+        faq_q2: "Wasla fonctionne-t-il en dehors de l'Algérie ?",
+        faq_a2: "Wasla est exclusivement conçu pour l'Algérie. La recherche d'adresses, le réseau de chauffeurs et les tarifs sont calibrés uniquement pour le marché algérien.",
+        faq_q3: "Comment mettre à jour l'application ?",
+        faq_a3: "Revenez simplement sur ce site pour télécharger la version la plus récente de l'APK. Installez-la par-dessus l'ancienne — vos données de compte seront conservées.",
+        faq_q4: "Quelle version d'Android est requise ?",
+        faq_a4: "Wasla nécessite Android 6.0 (Marshmallow) ou une version supérieure. La plupart des téléphones depuis 2016 sont entièrement compatibles.",
+        faq_q5: "Comment devenir chauffeur ?",
+        faq_a5: "Téléchargez l'application, choisissez \"Devenir Chauffeur\" lors de l'inscription et complétez votre profil. Notre équipe validera vos documents avant de vous donner accès aux trajets.",
+        
+        footer_tagline: "Relier l'Algérie, une livraison à la fois.",
+        footer_copy: "© 2026 Wasla. Tous droits réservés.",
+        
+        modal_book_title: "Demander une Livraison Wasla",
+        modal_book_desc: "Envoyez des colis, achetez des courses ou réservez un trajet en quelques minutes.",
+        form_name: "Votre Nom",
+        form_phone: "Numéro de Téléphone",
+        form_city: "Ville",
+        form_service: "Type de Service",
+        form_submit_book: "Calculer l'estimation",
+        success_book_title: "Demande Envoyée !",
+        success_book_desc: "Merci ! Votre pré-commande a bien été enregistrée. Wasla étant en cours de déploiement, notre équipe analysera la disponibilité des chauffeurs certifiés dans votre zone et vous contactera rapidement par SMS.",
+        
+        modal_driver_title: "Rejoindre l'équipe Wasla Chauffeur",
+        modal_driver_desc: "Générez des revenus complémentaires en effectuant des livraisons de colis ou des courses dans votre ville.",
+        form_vehicle: "Type de Véhicule",
+        form_submit_driver: "Soumettre ma Candidature",
+        success_driver_title: "Candidature Reçue !",
+        success_driver_desc: "Excellent ! Votre candidature a bien été reçue. Notre service de validation de documents vous contactera sous 48 heures pour finaliser votre dossier et activer votre tableau de bord chauffeur.",
+        vehicle_car: "Voiture (Trajets &amp; Livraisons)",
+        vehicle_moto: "Moto (Livraisons Rapides)",
+        vehicle_van: "Fourgon / Petit Camion (Charges Lourdes)"
+      },
+      ar: {
+        nav_features: "المميزات",
+        nav_how_it_works: "كيف يعمل",
+        nav_download: "تحميل",
+        nav_faq: "الأسئلة الشائعة",
+        nav_download_btn: "تحميل APK",
+        hero_badge: "🇩🇿 صُنع للجزائر",
+        hero_title: 'توصيل وطلبات،<br>أسهل وأسرع',
+        hero_subtitle: "وصلة يربط الزبائن بالسائقين المؤهلين والموثوقين في الجزائر. أرسل طروداً، وثائق، سلعاً غذائية أو احجز رحلة — كل هذا في تطبيق واحد، والدفع بالدينار الجزائري.",
+        hero_btn_download: "تحميل للأندرويد",
+        hero_btn_ghost: "كيفية العمل ↓",
+        stat_coverage_num: "الجزائر",
+        stat_coverage_label: "التغطية المتاحة فقط",
+        stat_currency_num: "DZD",
+        stat_currency_label: "العملة المحلية",
+        stat_availability_num: "24 / 7",
+        stat_availability_label: "الخدمة متوفرة",
+        phone_badge_parcel: "📦 تم إرسال الطرد!",
+        phone_badge_driver: "🚗 سائق قريب منك",
+        
+        features_label: "المميزات",
+        features_title: "كل ما تحتاجه، دون تعقيدات",
+        features_subtitle: "مطور خصيصاً للمستخدم الجزائري — يدعم اللغات المحلية، الأسعار بالدينار الجزائري، وبحث مواقع داخل الجزائر فقط.",
+        feat_1_title: "بحث ذكي عن العناوين",
+        feat_1_desc: "البحث عن المواقع الجغرافية داخل الجزائر فقط مدعومًا بخرائط Google، مع التركيز على موقعك الحالي لنتائج فورية ودقيقة.",
+        feat_2_title: "أنواع توصيل متعددة",
+        feat_2_desc: "أرسل طرودًا، وثائق، سلعًا غذائية، أو وجبات. كل فئة يتم التعامل معها بعناية فائقة من قبل سائقين مؤهلين وموثوقين.",
+        feat_3_title: "سائقون موثقون فقط",
+        feat_3_desc: "يمر كل سائق بعملية مراجعة وتحقق شاملة من قبل فريق الإدارة قبل تمكينه من قبول أي طلب توصيل أو رحلة.",
+        feat_4_title: "أسعار واضحة بالدينار DZD",
+        feat_4_desc: "تظهر جميع الأسعار بالدينار الجزائري. لا توجد رسوم خفية أو مفاجآت عملة — السعر الذي تراه هو السعر الذي تدفعه.",
+        feat_5_title: "تتبع مباشر في الوقت الحقيقي",
+        feat_5_desc: "تتبع حركة سائقك مباشرة على الخريطة من لحظة الاستلام وحتى التسليم. اعرف مكان شحنتك بدقة في كل ثانية.",
+        feat_6_title: "لوحة تحكم طلبات اليوم",
+        feat_6_desc: "يعرض التطبيق للزبائن جميع طلبات اليوم على الصفحة الرئيسية للوصول السريع إلى تفاصيل طلباتهم الجارية والأخيرة.",
+        
+        estimator_label: "حاسبة الأسعار",
+        estimator_title: "احسب تكلفة توصيلك أو رحلتك مباشرة",
+        estimator_subtitle: "اختر نوع الخدمة وحدد المسافة بالكيلومتر لتستعرض فوراً السعر التقديري الواضح بالدينار الجزائري (DZD).",
+        estimator_book_cta: "احجز توصيلاً الآن",
+        estimator_driver_cta: "انضم كسائق في وصلة",
+        service_ride: "رحلة",
+        service_parcel: "طرد",
+        service_grocery: "سلع غذائية",
+        service_food: "وجبات",
+        distance_label: "المسافة",
+        estimated_fare_label: "التكلفة التقديرية",
+        estimator_details_init: "تشمل التكلفة الأساسية · مطابقة مع سائق موثق",
+        estimator_details_ride: "تكلفة رحلة تقديرية · 150 دج السعر الأساسي + 40 دج/كلم",
+        estimator_details_parcel: "توصيل طرود سريع · 180 دج السعر الأساسي + 30 دج/كلم",
+        estimator_details_grocery: "رسوم توصيل بقالة · 200 دج السعر الأساسي + 35 دج/كلم",
+        estimator_details_food: "رسوم توصيل أطعمة ساخنة · 150 دج السعر الأساسي + 35 دج/كلم",
+        
+        how_it_works_label: "كيف يعمل",
+        how_it_works_title: "خطوات بسيطة لتوصيل سريع",
+        role_customer: "الزبون",
+        role_driver: "السائق",
+        cust_step_1_title: "افتح التطبيق",
+        cust_step_1_desc: "قم بتسجيل الدخول لتصل مباشرة إلى صفحتك الرئيسية المخصصة التي تحوي طلبات اليوم واختصارات التوصيل.",
+        cust_step_2_title: "اختر نوع التوصيل",
+        cust_step_2_desc: "حدد ما إذا كنت تريد إرسال طرد، وثائق، بقالة، أو طعام، ثم قم بتعيين موقعي الاستلام والتسليم على الخريطة.",
+        cust_step_3_title: "تتبع واستلم",
+        cust_step_3_desc: "شاهد سائقك على الخريطة في الوقت الفعلي واستلم طلبك مع توثيقه بصورة وتحديث حالة الطلب.",
+        driver_step_1_title: "قدم طلبك ووثق حسابك",
+        driver_step_1_desc: "سجل كسائق وقم برفع وثائقك ليقوم فريق إدارة وصلة بمراجعتها وتفعيل حسابك لتبدأ في استقبال الطلبات.",
+        driver_step_2_title: "انتقل للوضع نشط",
+        driver_step_2_desc: "قم بتفعيل حالة الاتصال بالإنترنت لبدء استقبال طلبات التوصيل والرحلات القريبة من موقعك الجغرافي الحالي.",
+        driver_step_3_title: "وصل واربح",
+        driver_step_3_desc: "اقبل الطلبات، أكمل عمليات التوصيل بكل سهولة، وتتبع سجل أرباحك وتفاصيلها مباشرة من لوحة التحكم.",
+        
+        download_label: "التحميل",
+        download_title: "ثبت تطبيق وصلة على هاتفك",
+        download_subtitle: "قم بتحميل ملف APK للأندرويد مباشرة — لا داعي لمتجر Google Play. يعمل على أندرويد 6.0 وما فوق.",
+        download_btn_text: "تحميل APK &nbsp;·&nbsp; مجاني",
+        download_warning: "⚠️ ستحتاج إلى السماح بالتثبيت من مصادر غير معروفة (انظر الدليل الموضح أدناه).",
+        
+        install_guide_title: "📱 كيفية التثبيت",
+        install_step_1: "<strong>قم بتحميل ملف APK</strong> بالنقر على الزر أعلاه. قد يظهر لك تحذير من المتصفح — انقر على <em>تحميل على أي حال</em>.",
+        install_step_2: "افتح <strong>إعدادات هاتفك ← الأمان</strong> (أو <strong>الخصوصية</strong> في الإصدارات الأحدث) وقم بتفعيل خيار <em>\"تثبيت التطبيقات من مصادر غير معروفة\"</em> لمتصفحك.",
+        install_step_3: "افتح الملف الذي قمت بتحميله من <strong>مجلد التنزيلات (Downloads)</strong> وانقر على <em>تثبيت (Install)</em>.",
+        install_step_4: "بمجرد اكتمال التثبيت، افتح تطبيق <strong>وصلة</strong>، سجل حسابك أو سجل دخولك، وابدأ الاستمتاع بالخدمة! 🎉",
+        
+        faq_label: "الأسئلة الشائعة",
+        faq_title: "الأسئلة الشائعة والإجابات",
+        faq_q1: "هل ملف APK آمن للتثبيت؟",
+        faq_a1: "نعم. ملف APK الخاص بوصلة هو الإصدار الرسمي الذي تم إنشاؤه وتصديره مباشرة من الكود المصدري للتطبيق. التثبيت بواسطة ملفات APK هو طريقة معيارية وآمنة تماماً على أجهزة الأندرويد.",
+        faq_q2: "هل يعمل تطبيق وصلة خارج الجزائر؟",
+        faq_a2: "تطبيق وصلة مصمم ومطور حصرياً للعمل داخل الجزائر فقط. كل محركات البحث، عمليات السائقين، والأسعار معدة ومخصصة للسوق الجزائرية.",
+        faq_q3: "كيف يمكنني تحديث التطبيق مستقبلاً؟",
+        faq_a3: "ببساطة، ارجع مجدداً إلى هذا الموقع وقم بتحميل أحدث إصدار لملف APK وثبته فوق الإصدار القديم مباشرة دون أن تفقد أي بيانات لحسابك.",
+        faq_q4: "ما هو إصدار الأندرويد المطلوب؟",
+        faq_a4: "يتطلب تطبيق وصلة نظام تشغيل أندرويد 6.0 (مارشميلو) أو أحدث. جميع الهواتف الذكية المنتجة بعد عام 2016 متوافقة تماماً معه.",
+        faq_q5: "كيف يمكنني التسجيل كشريك سائق؟",
+        faq_a5: "قم بتحميل التطبيق، ثم اختر \"التسجيل كسائق\" أثناء عملية التسجيل وأكمل بيانات ملفك الشخصي. سيقوم فريق التحقق بمراجعة طلبك والمستندات قبل تفعيل حسابك.",
+        
+        footer_tagline: "نربط الجزائر، شحنة تلو الأخرى.",
+        footer_copy: "© 2026 وصلة. جميع الحقوق محفوظة.",
+        
+        modal_book_title: "احجز خدمة توصيل من وصلة",
+        modal_book_desc: "أرسل طروداً، اطلب بقالة أو سلعاً، أو احجز رحلة سريعة وآمنة خلال دقائق.",
+        form_name: "الاسم الكامل",
+        form_phone: "رقم الهاتف",
+        form_city: "المدينة",
+        form_service: "نوع الخدمة",
+        form_submit_book: "أرسل طلب الحساب التقديري",
+        success_book_title: "تم استلام طلبك!",
+        success_book_desc: "شكراً لك! لقد سجلنا طلبك التقديري بنجاح. نظراً لأن منصة وصلة في مرحلة الإطلاق التجريبي حالياً، سيقوم فريق العمل بمراجعة توفر السائقين المعتمدين في منطقتك والتواصل معك عبر رسالة نصية SMS قريباً.",
+        
+        modal_driver_title: "انضم كشريك سائق في وصلة",
+        modal_driver_desc: "حقق دخلاً إضافياً ممتازاً عبر تقديم خدمات التوصيل والرحلات لزبائن التطبيق في مدينتك.",
+        form_vehicle: "نوع المركبة",
+        form_submit_driver: "إرسال طلب الانضمام",
+        success_driver_title: "تم استقبال طلبك بنجاح!",
+        success_driver_desc: "ممتاز! تم إرسال طلب انضمامك كشريك سائق بنجاح. سيقوم فريق التحقق من المستندات بالتواصل معك خلال 48 ساعة لاستكمال الإجراءات وتفعيل حسابك وبدء استقبال الرحلات.",
+        vehicle_car: "سيارة (رحلات وتوصيل طرود)",
+        vehicle_moto: "دراجة نارية (توصيل سريع)",
+        vehicle_van: "شاحنة صغيرة / فان (بضائع ثقيلة)"
+      }
+    };
+
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+      localStorage.setItem('wasla_lang', lang);
+
+      // Toggles body class
+      if (lang === 'ar') {
+        document.body.classList.add('rtl');
+        document.documentElement.dir = 'rtl';
+      } else {
+        document.body.classList.remove('rtl');
+        document.documentElement.dir = 'ltr';
+      }
+
+      // Update lang display names
+      const langNames = {
+        en: 'English',
+        fr: 'Français',
+        ar: 'العربية'
+      };
+      document.getElementById('currentLang').textContent = langNames[lang];
+
+      // Update Active dropdown
+      document.querySelectorAll('.lang-option').forEach(opt => {
+        if (opt.getAttribute('data-lang') === lang) {
+          opt.classList.add('active');
+        } else {
+          opt.classList.remove('active');
+        }
+      });
+
+      // Update all data-t elements
+      document.querySelectorAll('[data-t]').forEach(el => {
+        const key = el.getAttribute('data-t');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+    }
+
+    // Dropdown toggle
+    const langBtn = document.getElementById('langBtn');
+    const langDropdown = document.getElementById('langDropdown');
+
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langDropdown.classList.toggle('show');
+    });
+
+    document.addEventListener('click', () => {
+      langDropdown.classList.remove('show');
+    });
+
+    document.querySelectorAll('.lang-option').forEach(opt => {
+      opt.addEventListener('click', function() {
+        const lang = this.getAttribute('data-lang');
+        setLanguage(lang);
+      });
+    });
+
+    // Initialize from local storage
+    const savedLang = localStorage.getItem('wasla_lang') || 'en';
+    setLanguage(savedLang);
+
+
+
+  </script>
+</body>
+</html>
